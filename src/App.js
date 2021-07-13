@@ -2,7 +2,6 @@ import box from './box.png';
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
-let data = [];
 
 function App(props) {
 
@@ -46,9 +45,10 @@ function App(props) {
     );
   });
 
-  const [a] = useState(Math.floor(Math.random()*10));
-  const [b] = useState(Math.floor(Math.random()*10));
-  const [result] = useState(a + b);
+  const [a, setA] = useState(Math.floor(Math.random()*10));
+  const [b, setB] = useState(Math.floor(Math.random()*10));
+
+  const result = a+b;
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -60,8 +60,15 @@ function App(props) {
   }
 
   function submit(name, email){
-    data.push({name: name, email: email});;
-    console.log(data);
+    let data = [];
+    setA(Math.floor(Math.random()*10));
+    setB(Math.floor(Math.random()*10));
+
+    if(localStorage.getItem('target') != null){
+      data = JSON.parse(localStorage.getItem('target'));
+    }
+    data.push({name: name, email: email});
+    localStorage.setItem('target', JSON.stringify(data));
   }
 
   return (
@@ -84,7 +91,7 @@ function App(props) {
             <div className="description">
               Preparamos combos imperdíveis para você. Não perca essa chance!
             </div>
-            <img src={box} alt="" width="40%"/>
+            <img src={box} alt="" width="35%"/>
           </div>
           <div className="container-form">
             <h1>Seja avisado!</h1>

@@ -37,10 +37,7 @@
 
 .App-container {
   background-color: #111111;
-  /* margin-top: 12vh; */
-  /* margin-inline: 30vh; */
   width: 62vw;
-  height: 32vw;
   color: white;
 }
 
@@ -93,10 +90,12 @@
   background-color:#2a2a2a;
   float: right;
   margin-inline: 2vw;
-  margin-top: 3.5vh;
   padding-inline: 2vw;
   text-align: initial;
   padding-block: 1vh;
+  justify-self: center;
+  margin-top: 3.5vh;
+  margin-block: 3vh;
 }
 .container-form > h1 {
   font-size: 2vw;
@@ -161,7 +160,7 @@
   font-size: 1vw;
   margin: 0;
   font-family: system-ui;
-  margin-top: 9px;
+  margin-block: 9px;
 }
 
 .App-body-footer {
@@ -176,4 +175,100 @@
   font-family: system-ui;
   margin-top: -4%;
   color: #111111;
+}
+
+@media (max-width:600px) {
+
+  .App-header > h1 {
+    font-size: 1.5em;
+  }
+
+  .App-container {
+    width: 100%;
+  }
+
+  .title > h1 {
+    font-size: 3em;
+  }
+  .title > p {
+    font-size: 2.5em;
+  }
+
+  .container-form > h1 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+  }
+  
+  .container-form > p {
+    font-size: 0.8em;
+  }
+
+  .container-info > img {
+    width: 89%;
+    margin-block: 20px;
+  }
+  
+  .form > h5 {
+    font-size: 0.8em;
+    margin-bottom: 3px;
+  }
+
+  .form > p {
+    font-size: 0.6em;
+  }
+
+  .App-body-footer {
+    width: 100%;
+    font-size: 5vw;
+    font-weight: bold;
+    margin-top: -2%;
+  }
+}
+
+@media (min-width:601px) and (max-width:1000px) {
+
+  .App-header > h1 {
+    font-size: 1.5em;
+  }
+
+  .App-container {
+    width: 70%;
+  }
+
+  .title > h1 {
+    font-size: 3em;
+  }
+  .title > p {
+    font-size: 2.5em;
+  }
+
+  .container-form > h1 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+  }
+  
+  .container-form > p {
+    font-size: 0.8em;
+  }
+
+  .container-info > img {
+    width: 50%;
+    margin-block: 16px;
+  }
+  
+  .form > h5 {
+    font-size: 0.8em;
+    margin-bottom: 3px;
+  }
+
+  .form > p {
+    font-size: 0.6em;
+  }
+
+  .App-body-footer {
+    width: 100%;
+    font-size: 5vw;
+    font-weight: bold;
+    margin-top: 0%;
+  }
 }
