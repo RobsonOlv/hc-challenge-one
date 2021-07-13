@@ -1,38 +1,179 @@
+
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  height: 100%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #111111;
+  min-height: 12vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header > h1 {
+  font-size: 3vw;
+  margin: 0;
+  letter-spacing: 8px;
+  font-family: system-ui;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-body {
+  min-height: 88vh;
+  display: flex;
+  background-color: rgb(245 203 0);
+  position: relative;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.App-container {
+  background-color: #111111;
+  /* margin-top: 12vh; */
+  /* margin-inline: 30vh; */
+  width: 62vw;
+  height: 32vw;
+  color: white;
+}
+
+.container-info {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+.title > h1 {
+  margin: 0;
+  font-size: 5.8vw;
+  font-family: system-ui;
+}
+.title > p {
+  margin: 0;
+  font-size: 5vw;
+  font-family: system-ui;
+}
+.description {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-inline: 10px;
+}
+
+.divis {
+  width: 60%;
+  min-height: 2px;
+  position: relative;
+  background-color: #fdfdfd;
+  top: 2px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.divis2 {
+  width: 100%;
+  border-top:2px dotted #fdfdfd;
+  min-height: 2px;
+  position: relative;
+  margin: auto;
+  margin-block: 14px;
+}
+
+.container-form {
+  position: relative;
+  width: 36%;
+  height: 85%;
+  background-color:#2a2a2a;
+  float: right;
+  margin-inline: 2vw;
+  margin-top: 3.5vh;
+  padding-inline: 2vw;
+  text-align: initial;
+  padding-block: 1vh;
+}
+.container-form > h1 {
+  font-size: 2vw;
+  margin: 0;
+  font-family: system-ui;
+  margin-bottom: 5px;
+}
+
+.container-form > p {
+  font-size: 1.1vw;
+  margin: 0;
+  font-family: system-ui;
+}
+
+.form > h5 {
+  font-size: 1.1vw;
+  margin: 0;
+  font-family: system-ui;
+  margin-bottom: 3px;
+}
+
+.form > input {
+  margin: 0;
+  font-family: system-ui;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #fdfdfd;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.form > input:focus {
+  outline: none;
+}
+
+.form > button {
+  width: 100%;
+  background-color: #f13636;
+  border: 1px solid #f13636;
+  color: white;
+  border-radius: 3px;
+  height: 8vh;
+  margin-top: 5px;
+  cursor:pointer;
+}
+
+.form > button:hover {
+  background-color: #e20404;
+  border: 1px solid #e20404;
+}
+
+.form > button:active {
+  transform: translateY(3px);
+}
+
+.form > button:disabled {
+  background-color: #aaaaaa;
+  border: 1px solid #aaaaaa;
+}
+
+.form > p {
+  font-size: 1vw;
+  margin: 0;
+  font-family: system-ui;
+  margin-top: 9px;
+}
+
+.App-body-footer {
+  position: relative;
+  display: flex;
+  height: 10vh;
+  width: 64%;
+  font-size: 3vw;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 600;
+  font-family: system-ui;
+  margin-top: -4%;
+  color: #111111;
 }
