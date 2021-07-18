@@ -7,7 +7,7 @@ function App(props) {
 
   const timer = () => {
     let year = new Date().getFullYear();
-    let dif = +new Date(`07/18/${year}`) - +new Date();
+    let dif = +new Date(`11/26/${year}`) - +new Date();
   
     let timeLeft = {};
   
